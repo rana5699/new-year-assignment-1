@@ -313,3 +313,38 @@ hr {
   margin-right: 5px;
   cursor: pointer;
 }
+
+/* Holidays part START here */
+.holiday-part {
+  margin: 20px auto;
+}
+.holiday-contant {
+  margin: 30px auto;
+  text-align: center;
+}
+.holiday-text {
+  color: rgb(7, 2, 17);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 500;
+}
+.holiday-title {
+  margin-bottom: 10px;
+  font-family: Merriweather;
+  font-size: 52px;
+  font-weight: 900;
+  text-align: center;
+}
+.holiday-images {
+  justify-content: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.discount-logo {
+  position: absolute;
+  top: 345%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+}
+/* Holidays part END here */
