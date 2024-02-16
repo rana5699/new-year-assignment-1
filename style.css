@@ -80,6 +80,7 @@ body {
 }
 
 .midnight-content {
+  padding: 50px 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
