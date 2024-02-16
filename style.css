@@ -7,6 +7,9 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+p {
+  font-family: Inter;
+}
 /* banner */
 .banner-img {
   margin: 20px auto;
@@ -14,7 +17,6 @@ body {
   background: linear-gradient(90deg, #070217, rgba(7, 2, 17, 0)),
     url("images/Banner Image.png");
   background-size: cover;
-  background-color: red;
 }
 /* Happy New Year */
 .banner {
@@ -23,17 +25,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: Merriweather;
+  color: rgb(255, 255, 255);
+  font-weight: 900;
 }
 
 .banner-title1 {
-  color: rgb(255, 255, 255);
   font-size: 32px;
-  font-weight: 400;
+  margin-bottom: 20px;
 }
 .banner-title2 {
-  color: rgb(255, 255, 255);
-  font-size: 72px;
-  font-weight: 900;
+  font-size: 52px;
 }
 /* Happy New Year */
 
@@ -42,14 +44,16 @@ body {
 #category-part {
   margin: 20px auto;
 
+  font-family: Inter;
   text-align: center;
 }
 
 .off {
   color: rgb(255, 0, 0);
-  font-size: 88px;
+  font-size: 78px;
   font-weight: 700;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .holiday {
   color: rgb(255, 0, 0);
@@ -63,7 +67,6 @@ body {
   font-family: Inter;
   font-size: 48px;
   margin-bottom: 20px;
-
   font-weight: 700;
 }
 
@@ -80,34 +83,30 @@ body {
 }
 
 .midnight-content {
-  padding: 50px 10px;
+  padding: 50px 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .midnight-title {
+  font-family: Merriweather;
   color: rgb(255, 255, 255);
   font-size: 40px;
   font-weight: 900;
+  margin-bottom: 10px;
 }
 .midnight-desc {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
-}
-#join-now {
-  color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 20px;
-  text-transform: uppercase;
 }
 
 /* midnight sectiopn END here */
 
 /* join-now-part start here  */
 #join-now-part {
+  font-family: Inter;
   margin: 20px auto;
   padding: 20px;
   height: 500px;
@@ -123,6 +122,7 @@ body {
 }
 #join-now-info {
   text-align: center;
+  font-weight: bold;
 }
 .join-info {
   color: red;
@@ -253,10 +253,10 @@ body {
   font-family: Inter;
   font-size: 20px;
   font-weight: 600;
-  line-height: 20px;
   text-align: center;
   text-transform: capitalize;
   width: 210px;
+  padding: 0px 8px;
   height: 38px;
   border: none;
   background: rgb(255, 0, 0);
@@ -280,6 +280,7 @@ body {
   width: 90%;
   color: white;
   padding: 15px 15px 50px 15px;
+  font-weight: 500;
 }
 .container {
   width: 80%;
@@ -319,12 +320,18 @@ hr {
   margin: 20px auto;
 }
 .holiday-contant {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 0, 0.1),
+    rgba(255, 0, 0, 0) 100%
+  );
+  border-radius: 20px;
   margin: 30px auto;
   text-align: center;
 }
 .holiday-text {
   color: rgb(7, 2, 17);
-  font-family: Inter;
+
   font-size: 24px;
   font-weight: 500;
 }
@@ -339,12 +346,6 @@ hr {
   justify-content: center;
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
-.discount-logo {
-  position: absolute;
-  top: 345%;
-  left: 58%;
-  transform: translate(-50%, -50%);
-}
+
 /* Holidays part END here */
