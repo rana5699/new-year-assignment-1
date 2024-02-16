@@ -4,61 +4,52 @@
   box-sizing: border-box;
 }
 body {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 /* banner */
 .banner-img {
   margin: 20px auto;
-  height: 600px;
+  height: auto;
   background: linear-gradient(90deg, #070217, rgba(7, 2, 17, 0)),
     url("images/Banner Image.png");
   background-size: cover;
   background-color: red;
-  position: relative;
 }
 /* Happy New Year */
 .banner {
-  position: absolute;
-  width: 1320px;
   height: 600px;
-  left: 20%;
-  right: -140px;
-  top: 20%;
-  bottom: -50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .banner-title1 {
   color: rgb(255, 255, 255);
-  width: 259px;
-  height: 40px;
-  margin-left: 15%;
   font-size: 32px;
   font-weight: 400;
-  line-height: 40px;
-  letter-spacing: 0%;
-  text-align: center;
 }
 .banner-title2 {
-  width: 632px;
-  height: 190px;
-  /* color: red; */
   color: rgb(255, 255, 255);
   font-size: 72px;
   font-weight: 900;
-  line-height: 95px;
-  letter-spacing: 0%;
-  text-align: center;
 }
 /* Happy New Year */
 
 /* all category styles START here */
+
+#category-part {
+  margin: 20px auto;
+
+  text-align: center;
+}
+
 .off {
   color: rgb(255, 0, 0);
-  font-family: Inter;
   font-size: 88px;
   font-weight: 700;
   margin-bottom: 10px;
-  text-align: center;
 }
 .holiday {
   color: rgb(255, 0, 0);
@@ -66,61 +57,42 @@ body {
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 10px;
-  text-align: center;
 }
 .category {
   color: rgb(7, 2, 17);
   font-family: Inter;
   font-size: 48px;
+  margin-bottom: 20px;
+
   font-weight: 700;
-  text-align: center;
 }
-.allcategory-image {
-  width: 802.9px;
-  height: 500px;
-  margin: 30px auto;
-  background-image: url("images/New Year Photo.png");
-  background-repeat: no-repeat;
-}
+
 /* all category styles END here */
 
 /* midnight sectiopn START here */
 
 .midnight-banner-image {
   border-radius: 16px;
-  margin: 50px auto;
-  width: 95%;
-  height: 700px;
+  padding: 10px;
+  margin: 20px auto;
   background: linear-gradient(90deg, #070217, rgba(7, 2, 17, 0)),
     url("images/midnight-banner.png") center/cover;
-  position: relative;
 }
 
-.midnight-banner-content {
-  position: absolute;
-  width: 103px;
-  height: 24px;
-  right: 850px;
-  top: 1550px;
+.midnight-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 .midnight-title {
   color: rgb(255, 255, 255);
-  font-family: Merriweather;
-  font-size: 54px;
-  width: 400px;
+  font-size: 40px;
   font-weight: 900;
-  line-height: 88px;
-  letter-spacing: 11%;
-  text-align: left;
 }
 .midnight-desc {
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
   font-weight: 400;
-  line-height: 30px;
-  width: 400px;
-  letter-spacing: 0%;
-  text-align: left;
 }
 #join-now {
   color: rgb(255, 255, 255);
@@ -128,32 +100,18 @@ body {
   font-size: 20px;
   font-weight: 700;
   margin-top: 20px;
-  text-align: center;
   text-transform: uppercase;
 }
-#midnight-content-imge {
-  position: absolute;
-  left: 450px;
-  right: 0%;
-  top: -50px;
-  bottom: 0%;
-  width: 300px;
-  height: 460px;
 
-  background-image: url("images/midnight 24.png");
-  background-size: cover;
-}
 /* midnight sectiopn END here */
 
 /* join-now-part start here  */
 #join-now-part {
-  width: 90%;
   margin: 20px auto;
   padding: 20px;
-  height: 482px;
+  height: 500px;
   border-radius: 16px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
@@ -162,10 +120,7 @@ body {
     rgba(255, 0, 0, 0) 100%
   );
 }
-
 #join-now-info {
-  width: 549px;
-
   text-align: center;
 }
 .join-info {
@@ -181,7 +136,7 @@ body {
   height: 56px;
   background: rgb(245, 0, 0);
   padding: 16px 32px;
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 20px;
   font-weight: 700;
   color: rgb(255, 255, 255);
@@ -196,18 +151,15 @@ body {
 
 /* commi soon start here */
 .comming-soon-part {
-  width: 90%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
-  padding: 10px;
+  padding: 20px;
   margin: 20px auto;
 }
-.comming-content {
-  flex: 1;
-}
+
 .comming-best {
   color: rgb(255, 0, 0);
   font-family: Inter;
@@ -215,7 +167,6 @@ body {
   font-weight: 500;
 }
 .commin-title {
-  margin-top: 12px;
   color: rgb(7, 2, 17);
   font-family: Merriweather;
   font-size: 48px;
@@ -223,7 +174,6 @@ body {
   text-transform: capitalize;
 }
 .comming-desc {
-  margin-top: 20px;
   color: rgba(7, 2, 17, 0.6);
   font-family: Inter;
   font-size: 20px;
@@ -246,9 +196,7 @@ body {
   bottom: 0%;
   left: 8px;
 }
-.new-year {
-  flex: 1;
-}
+
 .year {
   color: rgb(255, 0, 0);
   font-family: Inter;
@@ -261,13 +209,7 @@ body {
 
 /* portfolio-soon-part */
 .portfolio-soon-part {
-  width: 90%;
   margin: 20px auto;
-  /* background: linear-gradient(
-    180deg,
-    rgba(255, 0, 0, 0.1),
-    rgba(255, 0, 0, 0) 100%
-  ); */
   padding: 10px;
   border-radius: 10px;
 }
@@ -275,16 +217,19 @@ body {
   margin-top: 20px auto;
 }
 .image-container img {
-  width: 300px;
-  height: 350px;
   border-radius: 20px;
+  margin-top: 10px;
+  transition: width 0.3s, height 0.3s;
+}
+.image-container img:hover {
+  width: 310px;
+  height: 310px;
+  cursor: pointer;
 }
 .container1 {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin: 15px auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 /* join button SATRT here   */
@@ -351,6 +296,10 @@ body {
   align-items: center;
   margin-bottom: 10px;
 }
+.contact:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 hr {
   color: white;
   margin-top: 30px;
@@ -361,4 +310,5 @@ hr {
 }
 .link img {
   margin-right: 5px;
+  cursor: pointer;
 }
