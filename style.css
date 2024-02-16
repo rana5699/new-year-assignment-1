@@ -223,14 +223,15 @@ p {
   transition: width 0.3s, height 0.3s;
 }
 .image-container img:hover {
-  width: 310px;
-  height: 310px;
+  width: 40%;
+  height: 315px;
   cursor: pointer;
 }
 .container1 {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  gap: 5px;
 }
 
 /* join button SATRT here   */
@@ -331,9 +332,9 @@ hr {
 }
 .holiday-text {
   color: rgb(7, 2, 17);
-
   font-size: 24px;
   font-weight: 500;
+  padding: 20px 10px;
 }
 .holiday-title {
   margin-bottom: 10px;
